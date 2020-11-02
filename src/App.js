@@ -1,22 +1,63 @@
+import React from 'react';
 import './App.css';
-//First Body Container images
 
+// Nav&Header images
+import logo from './Star Logo 07-2.png';
+import heroimage from './Hero image option 1 edit 2.png';
+
+//First Body Container images
 import rectangleImage from './DavidSection_home/Group 2.png';
 import lionKing from './DavidSection_home/lionKing.png';
 import baseball from './DavidSection_home/baseball.png';
 import cartoon from './DavidSection_home/cartoon.png';
 import alan from './DavidSection_home/alan.png';
 
+// 3rd section
+
+import scissors from './scissors.png';
+import puzzles from './puzzles.png';
+import blocks from './blocks.png';
+import library from './library.png';
+// import StarLogoE from './StarLogoE.png';
+
 function App() {
   return (
     /* navBar Section */
-    <div className="navContainer">
-      <div className="topNav">
-        <p>Top navBar Section</p>
+    <div className="container">
+
+    <div className="topnav">
+
+      <div className="logo">
+        <img src={logo} alt-text="logo"/>
       </div>
-      <div className="firstHeader">
-      <p>header1</p>
+
+
+      <div className="links">
+        <a href="#">HOME</a>
+        <a href="#">FEATURES</a>
+        <a href="#">TEACHERS</a>
+      </div>
+
+      <div className="langLog">
+
+        <button>lang+flags</button>
+        <button>Register | Log in</button>
+
+      </div>
+
     </div>
+    <header className="appHeader">
+      <img src={heroimage} />
+      <div className="headerText">
+        <p>Prepare young minds for a better <span>future.</span></p>
+        <p>Let us help you advance students in Digital Technologies and other learning areas with our project-based learning programme.</p>
+        <div className="headerButtons">
+          <button className="LearnMore">Learn More</button>
+          <button className="signUp">Sign Up</button>
+        </div>
+      </div>
+
+</header>
 
       {/* David Section */}
         <div className="row">
@@ -75,60 +116,52 @@ function App() {
   </div>
   </div>
 
-      <div className="secondBody">
-        <p>BODY #2</p>
-        <p>Teaching kids programming and digital skills is MORE than just writing code.</p>
-        <ul>
-          <li>Creativity & Individuality</li>
-          <li>Critical Thinking & Problem Solving</li>
-          <li>Communication & Collaboration</li>
-          <li>Technology & Future Focus</li>
-        </ul>
-        <h1>How our programme helps teachers and schools</h1>
-        <ol>
-          <ul>LEARNING PATHWAYS</ul>
-          <ul>DIGITAL TECHNOLOGIES</ul>
-          <ul>KEY COMPETENCES</ul>
-          <ul>IR4.0</ul>
-        </ol>
-    </div>
-    <div className="thirdBody">
-        <p>BODY #3</p>
-        <h2>Enhance key competencies</h2>
-        <p>The programme enhances capabilities of students in the 5 Key Competencies identified in the New Zealand Curriculum:</p>
-        <ol>
-          <h3>THINKING</h3>
-          <li>In particular the programme focused on problem solving, design thinking and computational thinking.</li>
-          <h3>DISCERNING CODES</h3>
-          <li>Analysing language, symbols, and texts in order to understand and make sense of the codes in which knowledge is expressed.</li>
-          <h3>SELF-MANAGEMENT</h3>
-          <li>Projects and challenges are designed to motivate students to explore and experiment with self-motivation</li>
-          <h3>RELATIONSHIPS WITH PEERS</h3>
-          <li>The programme is designed with unplugged sessions where students interact in a range of different situations, including things like being able to listen well, recognise different points of view, and share ideas.</li>
-          <h3>PARTICIPATION AND COLLABORATION</h3>
-          <li>The programme encourages students to be involved in communities, such as family, whānau, school, and contribute and make connections with other people</li>
-        </ol>
-    </div>
-    <div className="fourthBody">
-        <h1>What are you waiting for?</h1>
-        <h2>Start teaching Digital Technologies today.</h2>
-        <p>If you need more information, we are happy to answer any questions you may have.</p>
-        <li>
-          <button>ENQUIRE NOW</button>
-          <button>SIGN UP</button>
-        </li>
-    </div>
-    <div className="footerContainer">
-        <p className="footerPHeading">COMPANY</p>
-        <ul>
-          <ol>About Us</ol>
-          <ol>Careers</ol>
-          <ol>Partners</ol>
-        </ul>
-    </div>
-      <header>
-      </header>
+  <div className="sectionThree">
+
+<div className="images">
+  <p>Teaching kids programming and digitil skills is MORE than just writing code.</p>
+  <img src={scissors} alt="pic of scissors" className="create" />
+  <img src={puzzles} alt="pic of puzzles" className="critical" />
+  <img src={blocks} alt="pic of blocks" className="communication" />
+  <img src={library} alt="pic of library" className="technology" />
 </div>
+
+<div className="buttons">
+  <h2>How our programme helps teachers and schools</h2>
+  <button id="click1" onClick="click1">LEARNING PATHWAYS</button>
+  <button id="click2" onClick="click2">DIGITAL TECHNOLOGIES</button>
+  <button id="click3" onClick="click3">KEY COMPONANTS</button>
+  <button id="click4" onClick="click4">IR4.0</button>
+</div>
+</div>
+
+<div className="footer">
+<h1>Ehance key competencies</h1>
+<h2>The programme enhances capabilities of students in the
+      5 Key Competencies in the New Zeland Curriculim </h2>
+<ul> 
+  <li>THINKING</li>
+  <p>In particular the programme featured on problem solving,
+      design, thinking and computational thinking.</p>
+  <li>DISCERNING CODE</li>
+  <p>Analysing language symbols and texts, in order to
+          understand and make sense of the code in whcih knowledge is expressed.</p>
+  <li>SELF MANAGEMENT</li>
+  <p>Projects and challenges are designed to motivate
+         students to explore and experiment with self motivation. </p>
+  <li>RELATIONSHIP WITH PEERS</li>
+  <p>This programme is design with unplugged sessions where
+  students interact in a range of different situations, including things like being able to listen well,
+        recognise different points of view and share ideas.</p>
+  <li>PARTICIPATION AND COLLABERATION</li>
+  <p>This programme encourages students to be involoved in communities, such as family,
+        whanau, school and contribute and make connections with other people.</p>
+</ul>
+</div>
+
+</div>
+
+
   );
 }
 
